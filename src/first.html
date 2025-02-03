@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune</title>
+    <link rel="stylesheet" href="output.css">
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+</head>
+
+<body class="bg-white text-[#002230] font-sans leading-relaxed">
+    <div class="flex">
+        <!-- Left Pane -->
+        <div id="leftPane" class="w-[371px] h-screen p-[31px] flex flex-col justify-between transition-all duration-300 ease-in-out">
+            <div>
+                <div class="flex flex-col gap-[25px]">
+                    <div class="flex items-center justify-between">
+                        <img src="./asset/Union.png" alt="Logo" class="w-[168px] h-[32px]">
+                        <div class="cursor-pointer">
+                            <img src="./asset/left-arrow.svg" alt="" class="w-[20px]">
+                        </div>
+                    </div>
+                    <div class="flex gap-[6px] border border-[#cecece] rounded-[5px] p-[14px]">
+                        <img src="./asset/Logo.png" alt="User Avatar" class="w-[35px] h-[35px]">
+                        <div>
+                            <p class="text-[16px] font-semibold">Jessica Thompson</p>
+                            <p class="text-[12px]">Primary User</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[10px]">
+                        <div class="flex items-center gap-[17px] p-[13px] hover:bg-[#f0f0f08a] rounded-[5px]">
+                            <img src="./asset/home 1.svg" alt="Home Icon" class="w-[24px]">
+                            <span>Home</span>
+                        </div>
+                        <div class="flex items-center gap-[17px] p-[13px] bg-[#D3F7B5] rounded-[5px]">
+                            <img src="./asset/file-text 1.svg" alt="Documents Icon" class="w-[20px]">
+                            <span>Documents</span>
+                        </div>
+                        <div class="flex items-center gap-[17px] p-[13px] hover:bg-[#f0f0f08a] rounded-[5px]">
+                            <img src="./asset/message-circle 1.svg" alt="Chat Icon" class="w-[24px]">
+                            <span>Chat with Neptune</span>
+                        </div>
+                        <div class="flex items-center gap-[17px] p-[13px] hover:bg-[#f0f0f08a] rounded-[5px]">
+                            <img src="./asset/help-circle 1.svg" alt="Help Icon" class="w-[24px]">
+                            <span>Help</span>
+                        </div>
+                        <div class="flex items-center gap-[17px] p-[13px] hover:bg-[#f0f0f08a] rounded-[5px]">
+                            <img src="./asset/settings 1.svg" alt="Settings Icon" class="w-[24px]">
+                            <span>Settings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-[19px]">
+                <img src="./asset/Vector.svg" alt="Contact Icon" class="w-[33px]">
+                <p class="text-[24px] font-medium">Having trouble?</p>
+                <p>Feel free to contact us and we will always help you through the process.</p>
+                <button class="w-[97px] h-[35px] p-[9px] bg-[#1F4451] text-white text-[12px] rounded-[3px]">Contact us</button>
+            </div>
+        </div>
+
+        <!-- Right Pane -->
+        <div class="flex flex-col gap-[33px] w-full h-screen p-[30px_81px] bg-[#e6e6e6]">
+            <div class="flex flex-col gap-[33px]">
+                <div class="flex justify-between w-[150px] text-sm text-[#adadad]">
+                    <p class="text-[#757575] font-medium">Home</p>
+                    <img src="./asset/chevron-right.svg" alt="">
+                    <p>Documents</p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="font-serif font-semibold text-[33px]">My Documents</p>
+                    <div class="relative">
+                        <input type="text" placeholder="Search documents" class="w-[307px] h-[47px] p-[13px] border border-[#dadada] rounded-[4px]">
+                        <img src="./asset/Vector (1).svg" alt="Search Icon" class="absolute top-[6px] left-[-37px] h-[16.64px]">
+                    </div>
+                </div>
+            </div>
+            <table class="w-full bg-white rounded-[10px] overflow-hidden border border-[#dadada]">
+                <tbody>
+                    <tr>
+                        <td class="p-[10px]">
+                            <div class="flex items-center pl-[18px]">
+                                <input type="checkbox">
+                                <img src="./asset/down-arrow.svg" alt="" class="w-[10px] ml-[6px]">
+                                <span class="ml-[23px]">Document Name</span>
+                            </div>
+                        </td>
+                        <td class="p-[10px] text-black font-semibold">Status</td>
+                        <td class="p-[10px]">Last Modified</td>
+                        <td class="p-[10px] text-right">
+                            <button class="bg-[#002230] text-white px-[40px] py-[4px] rounded-[5px] cursor-pointer">Add Document</button>
+                        </td>
+                        <td class="w-[25px]"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Profile Icon -->
+    <div class="absolute top-[15px] right-[100px] flex flex-col items-end gap-[10px]">
+        <span class="cursor-pointer">
+            <img src="" alt="X" class="w-[40px] rounded-full shadow-lg">
+        </span>
+        <div class="absolute bg-white shadow-lg rounded-[8px] p-[10px] opacity-0 invisible transition-all duration-200 ease-in-out translate-y-[-10px]">
+            <div class="flex flex-col items-center gap-[10px]">
+                <img src="" alt="">
+                <p>Shagun Raj</p>
+            </div>
+            <div class="flex flex-col gap-[5px]">
+                <button class="px-[50px] py-[10px] hover:bg-[#e0e0e0] transition-all duration-300 ease-in-out">Edit Profile</button>
+                <button class="px-[50px] py-[10px] hover:bg-[#e0e0e0] transition-all duration-300 ease-in-out">Sign Out</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="app"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
