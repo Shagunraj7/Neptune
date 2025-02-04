@@ -11,29 +11,28 @@
 
 <body class="bg-white text-[#002230] font-sans leading-relaxed">
     <div class="flex">
-        <!-- Left Pane -->
-        <div id="leftPane" class="w-[371px] h-screen p-[31px] flex flex-col justify-between transition-all duration-300 ease-in-out">
+        <div class="w-[371px] h-screen p-[31px] flex flex-col justify-between transition-all duration-300 ease-in-out leftPane">
             <div>
                 <div class="flex flex-col gap-[25px]">
                     <div class="flex items-center justify-between">
-                        <img src="./asset/Union.png" alt="Logo" class="w-[168px] h-[32px]">
+                        <img src="./asset/Union.png" alt="Logo" class="w-[168px] h-[32px] logo">
                         <div class="cursor-pointer">
-                            <img src="./asset/left-arrow.svg" alt="" class="w-[20px]">
+                            <img src="./asset/left-arrow.svg" alt="" class="w-[20px] arrow">
                         </div>
                     </div>
-                    <div class="flex gap-[6px] border border-[#cecece] rounded-[5px] p-[14px]">
+                    <div class="flex gap-[6px] border border-[#cecece] rounded-[5px] p-[14px] user">
                         <img src="./asset/Logo.png" alt="User Avatar" class="w-[35px] h-[35px]">
                         <div>
                             <p class="text-[16px] font-semibold">Jessica Thompson</p>
                             <p class="text-[12px]">Primary User</p>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-[10px]">
+                    <div class="flex flex-col gap-[10px] icons">
                         <div class="flex items-center gap-[17px] p-[13px] hover:bg-[#f0f0f08a] rounded-[5px]">
                             <img src="./asset/home 1.svg" alt="Home Icon" class="w-[24px]">
                             <span>Home</span>
                         </div>
-                        <div class="flex items-center gap-[17px] p-[13px] bg-[#D3F7B5] rounded-[5px]">
+                        <div class="flex items-center gap-[17px] boa p-[13px] bg-[#D3F7B5] rounded-[5px]">
                             <img src="./asset/file-text 1.svg" alt="Documents Icon" class="w-[20px]">
                             <span>Documents</span>
                         </div>
@@ -52,7 +51,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-[19px]">
+            <div class="flex flex-col gap-[19px] bottom">
                 <img src="./asset/Vector.svg" alt="Contact Icon" class="w-[33px]">
                 <p class="text-[24px] font-medium">Having trouble?</p>
                 <p>Feel free to contact us and we will always help you through the process.</p>
@@ -89,7 +88,7 @@
                         <td class="p-[10px] text-black font-semibold">Status</td>
                         <td class="p-[10px]">Last Modified</td>
                         <td class="p-[10px] text-right">
-                            <button class="bg-[#002230] text-white px-[40px] py-[4px] rounded-[5px] cursor-pointer">Add Document</button>
+                            <button class="bg-[#002230] text-white px-[40px] py-[4px] rounded-[5px] cursor-pointer btn">Add Document</button>
                         </td>
                         <td class="w-[25px]"></td>
                     </tr>
@@ -100,23 +99,23 @@
 
     <!-- Profile Icon -->
     <div class="absolute top-[15px] right-[100px] flex flex-col items-end gap-[10px]">
-        <span class="cursor-pointer">
-            <img src="" alt="X" class="w-[40px] rounded-full shadow-lg">
+        <span class="cursor-pointer profileButton">
+            <img src="./asset/Shagun.jpg" alt="X" class="w-[40px] rounded-full shadow-lg">
         </span>
-        <div class="absolute bg-white shadow-lg rounded-[8px] p-[10px] opacity-0 invisible transition-all duration-200 ease-in-out translate-y-[-10px]">
+        <div class="absolute bg-white shadow-lg rounded-[8px] p-[10px] invisible transition-all duration-200 ease-in-out translate-y-[-10px] profileModel">
             <div class="flex flex-col items-center gap-[10px]">
                 <img src="" alt="">
                 <p>Shagun Raj</p>
             </div>
             <div class="flex flex-col gap-[5px]">
-                <button class="px-[50px] py-[10px] hover:bg-[#e0e0e0] transition-all duration-300 ease-in-out">Edit Profile</button>
-                <button class="px-[50px] py-[10px] hover:bg-[#e0e0e0] transition-all duration-300 ease-in-out">Sign Out</button>
+                <button class="px-[50px] py-[10px] hover:bg-[#e0e0e0]">Edit Profile</button>
+                <button class="px-[50px] py-[10px] hover:bg-[#e0e0e0]">Sign Out</button>
             </div>
         </div>
     </div>
 
     <div class="app"></div>
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
